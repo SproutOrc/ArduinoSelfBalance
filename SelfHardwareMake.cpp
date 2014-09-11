@@ -73,7 +73,9 @@ void SelfHardwareMake::stop()
 {
   digitalWrite(MLA, LOW);
   digitalWrite(MLB, LOW);
+  analogWrite(MLEN, 0);
 
   digitalWrite(MRA, LOW);
   digitalWrite(MRB, LOW);
+  analogWrite(MREN, 0);
 }
